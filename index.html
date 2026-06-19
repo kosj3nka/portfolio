@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gita — Product Builder & Co-Founder</title>
+  <meta name="description" content="Product builder and creative technologist. Design, code, strategy — all of it, simultaneously.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-pill">
+      <a href="#" class="nav-logo">Gita</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="#contact" class="nav-cta">
+        Let's build
+        <span class="btn-arrow-wrap"><span>↗</span></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="menu-overlay" id="menu-overlay">
+    <div class="menu-inner">
+      <a href="#work" class="menu-link" onclick="closeMenu()">Work</a>
+      <a href="#process" class="menu-link" onclick="closeMenu()">Process</a>
+      <a href="#about" class="menu-link" onclick="closeMenu()">About</a>
+      <a href="#contact" class="menu-link menu-link--accent" onclick="closeMenu()">Let's build →</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/lily.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-dot"></span>
+        Available for partnerships
+      </div>
+      <h1 class="hero-headline reveal">
+        Product<br>Builder.
+      </h1>
+      <p class="hero-role reveal">The co-founder <span class="accent">you need.</span></p>
+      <p class="hero-body reveal">
+        Product, design, and code — built together. Zagreb-based, working globally.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn-primary">
+          See my work
+          <span class="btn-arrow-wrap"><span>→</span></span>
+        </a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow-label">Selected Work</p>
+        <h2 class="section-title">Projects that prove the range.</h2>
+      </div>
+
+      <div class="bento">
+
+        <!-- Design Portal — large -->
+        <article class="card card--large reveal" data-delay="0">
+          <div class="card-shell">
+            <div class="card-core">
+              <div class="card-top">
+                <div class="card-tags">
+                  <span class="tag">Product</span>
+                  <span class="tag">Web</span>
+                  <span class="tag">Brand</span>
+                </div>
+                <a href="#" class="card-link">Case study ↗</a>
+              </div>
+              <div class="card-body">
+                <h3>Design Portal</h3>
+                <p>Content-to-commerce platform for interior design and physical art. Market research, revenue model, full-stack build — solo.</p>
+              </div>
+              <div class="card-tech">
+                <span>React</span>
+                <span>Supabase</span>
+                <span>PostgreSQL</span>
+                <span>Revenue Strategy</span>
+                <span>Product Design</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Screen Time App -->
+        <article class="card card--medium reveal" data-delay="80">
+          <div class="card-shell">
+            <div class="card-core">
+              <div class="card-top">
+                <div class="card-tags">
+                  <span class="tag">Mobile</span>
+                  <span class="tag">UX Design</span>
+                </div>
+                <a href="#" class="card-link">View ↗</a>
+              </div>
+              <div class="card-body">
+                <h3>Screen Time App</h3>
+                <p>Makes screen limits feel like a game. Original pixel art character system, built from scratch.</p>
+              </div>
+              <div class="card-tech">
+                <span>Mobile</span>
+                <span>Pixel Art</span>
+                <span>UX</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- VPN -->
+        <article class="card card--small reveal" data-delay="0">
+          <div class="card-shell">
+            <div class="card-core">
+              <div class="card-top">
+                <div class="card-tags">
+                  <span class="tag">Systems</span>
+                </div>
+                <a href="#" class="card-link">↗</a>
+              </div>
+              <div class="card-body">
+                <h3>Custom VPN</h3>
+                <p>Built from scratch in Go — Windows client, Linux server, TUN interfaces.</p>
+              </div>
+              <div class="card-tech">
+                <span>Go</span>
+                <span>Linux</span>
+                <span>Networking</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Business Finder -->
+        <article class="card card--small reveal" data-delay="80">
+          <div class="card-shell">
+            <div class="card-core">
+              <div class="card-top">
+                <div class="card-tags">
+                  <span class="tag">Web</span>
+                  <span class="tag">Marketing</span>
+                </div>
+                <a href="#" class="card-link">↗</a>
+              </div>
+              <div class="card-body">
+                <h3>Business Finder</h3>
+                <p>Surfaces local businesses with no web presence, for lead generation. Built on the Maps API.</p>
+              </div>
+              <div class="card-tech">
+                <span>React</span>
+                <span>Maps API</span>
+                <span>Lead Gen</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CSS Lab — accent card -->
+        <article class="card card--small reveal" data-delay="160">
+          <div class="card-shell card-shell--accent">
+            <div class="card-core card-core--accent">
+              <div class="card-top">
+                <div class="card-tags">
+                  <span class="tag tag--accent">Design</span>
+                  <span class="tag tag--accent">Craft</span>
+                </div>
+                <a href="#" class="card-link card-link--accent">↗</a>
+              </div>
+              <div class="card-body">
+                <h3>CSS Lab</h3>
+                <p>Animation and interaction experiments — what the browser can feel like.</p>
+              </div>
+              <div class="card-tech card-tech--accent">
+                <span>CSS</span>
+                <span>Animation</span>
+                <span>Motion</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Workshop Café — wide -->
+        <article class="card card--wide reveal" data-delay="0">
+          <div class="card-shell">
+            <div class="card-core card-core--horizontal">
+              <div class="card-wide-left">
+                <div class="card-tags">
+                  <span class="tag">Marketing</span>
+                  <span class="tag">Automation</span>
+                </div>
+                <h3>Workshop Café<br>Email System</h3>
+                <p>Email automation for a real client — announcement flows, signup triggers, segmented lists.</p>
+              </div>
+              <div class="card-wide-right">
+                <div class="card-tech">
+                  <span>Email Automation</span>
+                  <span>Segmentation</span>
+                  <span>Marketing Systems</span>
+                </div>
+                <a href="#" class="card-link">Case study ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /bento -->
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow-label">Process</p>
+        <h2 class="section-title">Two ways to work together.</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card reveal" data-delay="0">
+          <div class="card-shell">
+            <div class="card-core">
+              <div class="process-num">01</div>
+              <h3>Build with you</h3>
+              <p>You have the idea. I come in early, shape the product, and execute across design, code, and brand. Equity or hybrid.</p>
+              <ul class="process-list">
+                <li>Strategy + competitive research</li>
+                <li>Design system + brand</li>
+                <li>Full-stack build and launch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-card reveal" data-delay="120">
+          <div class="card-shell">
+            <div class="card-core">
+              <div class="process-num">02</div>
+              <h3>Build for you</h3>
+              <p>You know what you need. I deliver at co-founder quality — challenging the spec when it's wrong, not just shipping it.</p>
+              <ul class="process-list">
+                <li>Web + mobile development</li>
+                <li>Marketing systems + automation</li>
+                <li>Brand and visual identity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section class="section" id="stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow-label">Stack</p>
+        <h2 class="section-title">What I actually use.</h2>
+      </div>
+
+      <div class="stack-grid reveal">
+        <div class="stack-col">
+          <p class="stack-label">Frontend</p>
+          <div class="stack-items">
+            <span>React</span>
+            <span>HTML / CSS</span>
+            <span>JavaScript</span>
+            <span>Tailwind</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <p class="stack-label">Backend</p>
+          <div class="stack-items">
+            <span>Go</span>
+            <span>Supabase</span>
+            <span>PostgreSQL</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <p class="stack-label">Systems</p>
+          <div class="stack-items">
+            <span>Linux</span>
+            <span>Networking / TUN</span>
+            <span>Windows</span>
+            <span>Arduino</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <p class="stack-label">Design</p>
+          <div class="stack-items">
+            <span>Figma</span>
+            <span>CSS Animation</span>
+            <span>Pixel Art</span>
+            <span>Brand Systems</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <p class="stack-label">Marketing</p>
+          <div class="stack-items">
+            <span>Email Automation</span>
+            <span>Google APIs</span>
+            <span>SEO</span>
+            <span>Analytics</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <p class="stack-label">Product</p>
+          <div class="stack-items">
+            <span>Market Research</span>
+            <span>Revenue Modeling</span>
+            <span>Competitive Analysis</span>
+            <span>Roadmapping</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-left">
+          <p class="eyebrow-label">About</p>
+          <h2 class="section-title">Builder<br>from<br>Zagreb.</h2>
+        </div>
+        <div class="about-right">
+          <p>I'm 17, based in Zagreb. I've shipped a content-to-commerce platform, a custom VPN in Go, marketing systems, and mobile apps — usually solo.</p>
+          <p>I'm not a specialist, I'm a builder — design, engineering, product, and brand, done together. If you're building something worth building, reach out.</p>
+          <div class="about-links">
+            <a href="mailto:your@email.com" class="about-link">your@email.com ↗</a>
+            <a href="https://github.com/yourusername" target="_blank" class="about-link">GitHub ↗</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="about-link">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--contact" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <p class="eyebrow-label">Let's Talk</p>
+        <h2 class="contact-headline">
+          Have an idea?<br>
+          <span class="accent">Let's build it.</span>
+        </h2>
+        <p class="contact-sub">Open to partnerships and contract work. I respond fast.</p>
+        <a href="mailto:your@email.com" class="btn-primary btn-primary--large">
+          Get in touch
+          <span class="btn-arrow-wrap"><span>↗</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Gita</p>
+      <p class="footer-copy">Zagreb, Croatia · 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
